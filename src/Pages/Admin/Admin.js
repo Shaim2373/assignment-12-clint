@@ -27,7 +27,6 @@ const AllBookinPresent = () => {
             <h1 className='text-3xl text-bold text-black mb-10 text-center'>All Resell Car Booking User <span className='text-fuchsia-700'>{booking?.length}</span></h1>
             <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
-                    {/* <!-- head --> */}
                     <thead>
                         <tr>
                             <th></th>
