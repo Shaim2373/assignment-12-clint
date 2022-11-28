@@ -8,17 +8,13 @@ import useToken from '../hook/useToken';
 const Login = () => {
 
     useTitle('Login')
-    //import UserContextFile
     const { user, singInPage, singInAutoGoogle, forGetPass } = useContext(AuthContext)
 
     const [userEmail, setUserEmail] = useState('')
-    ///up forget option
 
     const [logInUserToken, setLogInUserToken] = useState('');
 
     const [token] = useToken(logInUserToken);
-
-    //location
     const navigat = useNavigate()
     const location = useLocation()
     const froms = location?.state?.from?.pathname || '/';
