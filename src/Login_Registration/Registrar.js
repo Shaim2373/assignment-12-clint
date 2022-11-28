@@ -4,7 +4,6 @@ import { AuthContext } from '../Contexts/UserContext';
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 import { toast } from 'react-toastify';
 import useTitle from '../hook/useTitle';
-// import { useEffect } from 'react';
 import useToken from '../hook/useToken';
 
 
