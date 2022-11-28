@@ -3,12 +3,33 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import UseContext from './Contexts/UserContext';
+import { ToastContainer } from 'react-toastify';
+import { useQuery, useMutation, useQueryClient, QueryClient, QueryClientProvider, } from 'react-query'
 
+const queryClient = new QueryClient()
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <div className='max-w-7xl mx-auto'>
+  <div className=''>
+    <UseContext>
+      <QueryClientProvider client={queryClient}>
+        <ToastContainer
+          position="top-center"
+          autoClose={2000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+        />
+        <App />
+      </QueryClientProvider>
+    </UseContext>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
