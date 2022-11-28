@@ -30,8 +30,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/cetegories',
-                element: <CarCategori />,
-                // loader: ({ params }) => fetch(`https://assegnment-12-server-site.vercel.app/cetegories/${params.id}`)
+                element: <CarCategori />
 
             },
             {
