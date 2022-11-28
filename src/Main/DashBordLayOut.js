@@ -4,8 +4,6 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import DashBord from '../Pages/Dash-Bord/DashBord';
-// import Footer from '../Pages/Shared/Footer/Footer';
-// import Navbar from '../Pages/Shared/Navbar/Navbar';
 
 const DashBordLayOut = () => {
     return (
